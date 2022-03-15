@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>Video + Canvas</title>
+<meta charset="utf-8">
+<script src="videocanvas.js"></script>
+<link rel="stylesheet" href="videocanvas.css">
+</head>
+<body>
+
+<form>
+	<input type="button" id="byn" value="B&N">
+	<input type="button" id="normal" value="Normal">
+	<input type="button" id="pausa" value="Pausa">
+	<input type="button" id="cienciaFiccion" value="Ciencia Ficcion">
+	<input type="button" id="rotar" value="Rotar">
+	<input type="button" id="pAudio" value="Play Audio">
+	<input type="button" id="mute" value="mute/unmute">
+</form>
+
+<div id="videoDiv">
+<video id="video" width="720" height="480"> </video>
+<canvas id="buffer" width="720" height="480"></canvas>
+<canvas id="display" width="720" height="480"></canvas>
+</div>
+<audio preload="none" id="myAudio"></audio>
+<audio controls src="audio/soundtrack.mp3" type="audio.mpeg" preload="none" id="myAudio2"><audio>
+</body>
+</html>
